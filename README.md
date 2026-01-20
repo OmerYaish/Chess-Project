@@ -10,7 +10,7 @@ This README explains **exactly how to run each component**.
 ```
 project_root/
 │
-├── DataGenerator                           
+├── DataGeneration                         
     ├──── chess_position_api_v2   
     ├──── chess-set (blender)   
     ├──── generate_dataset.py               # Synthetic data generation script
