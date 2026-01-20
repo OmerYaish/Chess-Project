@@ -116,15 +116,14 @@ Final_model.ipynb
 ### File Upload Cell
 
 Upload:
-- `best_train.pt` model file - attached to the submission. (you can use other .pt file as well however the attached one gives the best results)
+- `best_train.pt` model file - attached to the github releases. (you can use other .pt file as well however the attached one gives the best results)
 - One or more chessboard images for testing
 
 ### Output
 
-The notebook displays:
-- Input images
-- Predicted board states and FEN strings for each input image.
-
+- The required tensor
+- Folder "results" with the predicted board image (the model output)
+  
 This notebook is **ready to run** and requires no code changes.
 
 ---
