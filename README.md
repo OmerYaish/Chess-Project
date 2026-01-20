@@ -11,12 +11,12 @@ This README explains **exactly how to run each component**.
 project_root/
 │
 ├── DataGeneration                         
-    ├──── chess_position_api_v2   
-    ├──── chess-set (blender)   
+    ├──── chess_position_api_v2.py
+    ├──── chess-set.blender (blender)   
     ├──── generate_dataset.py               # Synthetic data generation script
     ├──── generate_csv_files.py             # submission format adapter
     ├──── generate_synthetic_from_pgn.py    # Synthetic data generation script from the given pgn images
-    ├──── requirements
+    ├──── requirements.txt
 ├── training_notebook.ipynb          # Training notebook (GPU required)
 ├── Final_model.ipynb                # Inference notebook (Colab)
 ├── best_train.pt                    # Trained model checkpoint
