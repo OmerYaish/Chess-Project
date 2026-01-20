@@ -131,5 +131,5 @@ This notebook is **ready to run** and requires no code changes.
 
 ## Contact
 For questions regarding setup or execution, refer to the project report or contact the project author:
-**Maayan Sameach**
+**Maayan Sameach** &
 **Omer Yaish**
