@@ -20,7 +20,7 @@ project_root/
 ├── training_notebook.ipynb                              # Training notebook (GPU required)
 ├── Final_model.ipynb                                    # Inference notebook (Colab)
 ├── best_train.pt (attached to releases)                 # Trained model checkpoint
-└── README.md                        # This file
+└── README.md                                            # This file
 ```
 
 ---
