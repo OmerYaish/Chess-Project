@@ -85,6 +85,7 @@ training_notebook.ipynb
 
 5. Verify the notebook is connected to a **GPU kernel**.
 6. Upload the chess_data folder to the same directory where the .ipynb file is located, using the following structure:
+   ```
         ├── chess_data                         
             ├─── highres_main                        
                    ├─── high_res_data                # Synthetic generated games
@@ -99,6 +100,7 @@ training_notebook.ipynb
                  ├── game0_per_frame
                  ├── game1_per_frame
                  └── ...
+   ```
    Upload the folders from Drive that end with **"format1"**.
 7. Run all cells **from top to bottom**.
 
