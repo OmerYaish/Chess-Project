@@ -88,10 +88,10 @@ training_notebook.ipynb
    ```
         ├── chess_data                         
             ├─── highres_main                        
-                   ├─── high_res_data                # Synthetic generated games
-                         ├── game_0000
-                         ├── game_0001
-                         └── ...
+                 ├─── high_res_data                # Synthetic generated games
+                      ├── game_0000
+                      ├── game_0001
+                      └── ...
             ├─── synthetic_from_pgn                  # Synthetic generated images from the given pgn images
                  ├── game_0000
                  ├── game_0001
