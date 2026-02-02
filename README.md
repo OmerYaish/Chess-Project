@@ -16,7 +16,7 @@ project_root/
     ├──── generate_dataset.py                            # Synthetic data generation script
     ├──── generate_csv_files.py                          # submission format adapter
     ├──── generate_synthetic_from_pgn.py                 # Synthetic data generation script from the given pgn images
-    ├──── requirements.txt
+├──── requirements.txt
 ├── training_notebook.ipynb                              # Training notebook (GPU required)
 ├── Final_model.ipynb                                    # Inference notebook (Colab)
 ├── best_train.pt (attached to releases)                 # Trained model checkpoint
@@ -84,7 +84,23 @@ training_notebook.ipynb
 ```
 
 5. Verify the notebook is connected to a **GPU kernel**.
-6. Run all cells **from top to bottom**.
+6. Upload the chess_data folder to the same directory where the .ipynb file is located, using the following structure:
+        ├── chess_data                         
+            ├─── highres_main                        
+                   ├─── high_res_data                # Synthetic generated games
+                         ├── game_0000
+                         ├── game_0001
+                         └── ...
+            ├─── synthetic_from_pgn                  # Synthetic generated images from the given pgn images
+                 ├── game_0000
+                 ├── game_0001
+                 └── ...
+            ├─── real                                # Real images
+                 ├── game0_per_frame
+                 ├── game1_per_frame
+                 └── ...
+   Upload the folders from Drive that end with **"format1"**.
+7. Run all cells **from top to bottom**.
 
 ### Output
 
