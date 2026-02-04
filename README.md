@@ -9,7 +9,6 @@ This README explains **exactly how to run each component**.
 
 ```
 project_root/
-│
 ├── DataGeneration                         
     ├──── chess_position_api_v2.py
     ├──── chess-set.blender (blender)   
@@ -25,14 +24,28 @@ project_root/
 
 ---
 
+## Environment & Dependencies (Reproducibility)
+
+This project was developed and tested using the following environment:
+
+- Python version: **3.9.21**
+- Python environment: **venv**
+- Platform: Linux (University GPU server)
+- GPU: NVIDIA GeForce GTX 1080
+- PyTorch: 2.7.1 with CUDA 11.8
+
+The Python environment used during development was activated using:
+```bash
+source ~/venvs/dl/bin/activate
+
 ## 1. Synthetic Dataset Generation (Local / VS Code)
 
 This step generates **synthetic chessboard images and labels** used for training.
 
 ### Requirements
-- Python 3.8+
-- Required Python packages installed
-- Local machine or any environment with Python support
+- Python 3.9.21
+- venv environment activated
+- Blender installed locally
 
 ### Steps
 
@@ -55,9 +68,10 @@ python generate_dataset.py
 Training is performed using a Jupyter Notebook and **requires GPU acceleration**.
 
 ### Environment
-- University GPU server
-- Python environment with PyTorch + CUDA
-- Jupyter Notebook / JupyterLab
+- Python 3.9.21
+- venv (activated via `source ~/venvs/dl/bin/activate`)
+- NVIDIA GeForce GTX 1080
+- PyTorch 2.7.1 + CUDA 11.8
 
 ### Steps
 
@@ -94,11 +108,10 @@ training_notebook.ipynb
                       └── ...
             ├─── synthetic_from_pgn                  # Synthetic generated images from the given pgn images
                  ├── game_0000
-                 ├── game_0001
-                 └── ...
+                 └── game_0001
             ├─── real                                # Real images
-                 ├── game0_per_frame
-                 ├── game1_per_frame
+                 ├── game2_per_frame
+                 ├── game4_per_frame
                  └── ...
    ```
    Upload the folders from Drive that end with **"format1"**.
