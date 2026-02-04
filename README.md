@@ -37,6 +37,7 @@ This project was developed and tested using the following environment:
 The Python environment used during development was activated using:
 ```bash
 source ~/venvs/dl/bin/activate
+```
 
 ### Required Python Packages
 
