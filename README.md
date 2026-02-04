@@ -38,6 +38,37 @@ The Python environment used during development was activated using:
 ```bash
 source ~/venvs/dl/bin/activate
 
+### Required Python Packages
+
+All required Python packages are explicitly installed inside the notebooks using `pip install` cells.  
+For clarity and reproducibility, the complete list of required packages is provided below.
+
+Core dependencies:
+- torch (tested with version 2.7.1 + CUDA 11.8)
+- torchvision
+- numpy
+- pandas
+- scikit-learn
+- matplotlib
+- tqdm
+- pillow
+- opencv-python
+- albumentations (2.0.8)
+- chess (1.11.2)
+
+Jupyter environment packages:
+- jupyter
+- notebook
+- ipykernel
+- jupyterlab
+
+Manual installation (optional):
+```bash
+pip install torch torchvision numpy pandas scikit-learn matplotlib tqdm pillow opencv-python albumentations chess jupyter notebook ipykernel jupyterlab
+```
+
+---
+
 ## 1. Synthetic Dataset Generation (Local / VS Code)
 
 This step generates **synthetic chessboard images and labels** used for training.
